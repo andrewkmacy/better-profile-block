@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Adds a profile block to the WordPress 5 Gutenberg block editor.
+ * Adds a custom profile block to the WordPress block editor.
  *
  * @link https://github.com/andrewkmacy/better-profile-block
  * @since 1.0.0
@@ -10,9 +10,10 @@
  * @wordpress-plugin
  * Plugin Name: Better Profile Block
  * Plugin URI: https://github.com/andrewkmacy/better-profile-block
- * Description: Better Profile Block is a Gutenberg block designed to add custom author bios to your posts and pages.
- * Author: Drew Macy, based on Organic Profile Block by Organic Themes - https://github.com/Invulu/organic-profile-block
+ * Description: Better Profile Block helps you add custom author bios to your posts and pages.
+ * Author: Drew Macy
  * Author URI: https://github.com/andrewkmacy/better-profile-block
+ * Contributors: Based on Organic Profile Block by Organic Themes - https://github.com/Invulu/organic-profile-block
  * Version: 1.0.0
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
