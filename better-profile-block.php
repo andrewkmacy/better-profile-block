@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Adds a custom profile block to the WordPress block editor.
+ * 
  *
  * @link https://github.com/andrewkmacy/better-profile-block
  * @since 1.0.0
@@ -9,8 +9,7 @@
  *
  * @wordpress-plugin
  * Plugin Name: Better Profile Block
- * Plugin URI: https://github.com/andrewkmacy/better-profile-block
- * Description: Better Profile Block helps you add custom author bios to your posts and pages.
+ * Description: A custom profile block for the WordPress page editor
  * Author: Drew Macy
  * Author URI: https://github.com/andrewkmacy/better-profile-block
  * Contributors: Based on Organic Profile Block by Organic Themes - https://github.com/Invulu/organic-profile-block
