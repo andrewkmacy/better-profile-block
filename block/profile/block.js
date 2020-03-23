@@ -10,16 +10,16 @@
     var PanelBody = components.PanelBody
     var TextControl = components.TextControl
   
-    registerBlockType('better/profile-block', { // The name of our block. Must be a string with prefix. Example: my-plugin/my-custom-block.
-      title: __('Profile'), // The title of our block.
-      description: __('Custom profile block.'), // The description of our block.
-      icon: 'businessman', // Dashicon icon for our block. Custom icons can be added using inline SVGs.
-      category: 'common', // The category of the block.
+    registerBlockType('better/profile-block', {
+      title: __('Profile'),
+      description: __('Custom profile block.'),
+      icon: 'id-alt', 
+      category: 'common', 
       supports: {
         align: true,
         alignWide: true
       },
-      attributes: { // Necessary for saving block content.
+      attributes: {
         title: {
           type: 'array',
           source: 'children',
@@ -81,7 +81,7 @@
         }
   
         return [
-          el(BlockControls, { key: 'controls' }, // Display controls when the block is clicked on.
+          el(BlockControls, { key: 'controls' }, 
             el('div', { className: 'components-toolbar' },
               el(MediaUpload, {
                 onSelect: onSelectImage,
@@ -91,27 +91,27 @@
                     className: 'components-icon-button components-toolbar__control',
                     onClick: obj.open
                   },
-                  // Add Dashicon for media upload button.
+                 
                   el('svg', { className: 'dashicon dashicons-edit', width: '20', height: '20' },
                     el('path', { d: 'M2.25 1h15.5c.69 0 1.25.56 1.25 1.25v15.5c0 .69-.56 1.25-1.25 1.25H2.25C1.56 19 1 18.44 1 17.75V2.25C1 1.56 1.56 1 2.25 1zM17 17V3H3v14h14zM10 6c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm3 5s0-6 3-6v10c0 .55-.45 1-1 1H5c-.55 0-1-.45-1-1V8c2 0 3 4 3 4s1-3 3-3 3 2 3 2z' })
                   ))
                 }
               })
             ),
-            // Display alignment toolbar within block controls.
+            
             el(AlignmentToolbar, {
               value: alignment,
               onChange: onChangeAlignment
             })
           ),
-          el(InspectorControls, { key: 'inspector' }, // Display the block options in the inspector panel.
+          el(InspectorControls, { key: 'inspector' }, 
             el(PanelBody, {
               title: __('Social Media Links'),
               className: 'block-social-links',
               initialOpen: true
             },
             el('p', {}, __('Add links to your social media profiles.')),
-            // Facebook social media text field option.
+            
             el(TextControl, {
               label: __('Facebook URL'),
               value: attributes.facebookURL,
@@ -119,7 +119,7 @@
                 props.setAttributes({ facebookURL: newFacebook })
               }
             }),
-            // Twitter social media text field option.
+            
             el(TextControl, {
               label: __('Twitter URL'),
               value: attributes.twitterURL,
@@ -127,7 +127,7 @@
                 props.setAttributes({ twitterURL: newTwitter })
               }
             }),
-            // Instagram social media text field option.
+            
             el(TextControl, {
               label: __('Instagram URL'),
               value: attributes.instagramURL,
@@ -135,7 +135,7 @@
                 props.setAttributes({ instagramURL: newInstagram })
               }
             }),
-            // LinkedIn social media text field option.
+            
             el(TextControl, {
               label: __('LinkedIn URL'),
               value: attributes.linkedURL,
@@ -143,7 +143,7 @@
                 props.setAttributes({ linkedURL: newLinkedIn })
               }
             }),
-            // Email address text field option.
+            
             el(TextControl, {
               label: __('Email Address'),
               value: attributes.emailAddress,

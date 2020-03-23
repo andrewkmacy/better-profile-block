@@ -1,3 +1,3 @@
 # better-profile-block
 
-a simple gutenberg block for adding a custom author profile
+a simple plugin for adding a custom author profile via the gutenberg editor
