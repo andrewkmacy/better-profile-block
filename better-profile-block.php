@@ -9,7 +9,7 @@
  *
  * @wordpress-plugin
  * Plugin Name: Better Profile Block
- * Description: A custom profile block for the WordPress page editor
+ * Description: A custom Profile block for the WordPress page editor.
  * Author: Drew Macy
  * Author URI: https://github.com/andrewkmacy/better-profile-block
  * Contributors: Based on Organic Profile Block by Organic Themes - https://github.com/Invulu/organic-profile-block
